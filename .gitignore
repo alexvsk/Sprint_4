@@ -7,4 +7,4 @@ venv
 .idea
 tests/__pycache__/
 pages/__pycache__/
-locators/__pycache__/
+/__pycache__/
