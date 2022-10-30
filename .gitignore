@@ -1,0 +1,11 @@
+geckodriver.log
+pages/geckodriver.log
+tests/geckodriver.log
+tests/.pytest_cache
+venv
+.pytest_cache
+.idea
+tests/__pycache__/
+pages/__pycache__/
+/__pycache__/
+locators/__pycache__/
