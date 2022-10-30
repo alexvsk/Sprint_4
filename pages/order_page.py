@@ -3,7 +3,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from locators.order_page_locators import OrderPageLocators as OPL
 from selenium.webdriver.common.keys import Keys
 
-class OrderPageScooter:
+class OrderPage:
 
     def __init__(self, driver):
         self.driver = driver
@@ -11,10 +11,6 @@ class OrderPageScooter:
     # Ожидание формы заказа
     def wait_order_form_for_whom(self):
         WebDriverWait(self.driver, 3).until(expected_conditions.visibility_of_element_located(OPL.ORDER_FORM))
-
-    # Название формы заказа
-    def name_order_form(self):
-        return self.driver.find_element(*OPL.ORDER_FORM_TEXT).text
 
     # Заполнение поля "Имя" в форме заказа
     def input_name(self, name):

@@ -2,14 +2,14 @@ from selenium.webdriver.common.by import By
 
 
 class MainPageLocators:
-    HEAD_0 = (By.CSS_SELECTOR, "#accordion__heading-0")  # Заголовок списка «Вопросы о важном» 1 сверху
-    HEAD_1 = (By.CSS_SELECTOR, "#accordion__heading-1")  # Заголовок списка «Вопросы о важном» 2 сверху
-    HEAD_2 = (By.CSS_SELECTOR, "#accordion__heading-2")  # Заголовок списка «Вопросы о важном» 3 сверху
-    HEAD_3 = (By.CSS_SELECTOR, "#accordion__heading-3")  # Заголовок списка «Вопросы о важном» 4 сверху
-    HEAD_4 = (By.CSS_SELECTOR, "#accordion__heading-4")  # Заголовок списка «Вопросы о важном» 5 сверху
-    HEAD_5 = (By.CSS_SELECTOR, "#accordion__heading-5")  # Заголовок списка «Вопросы о важном» 6 сверху
-    HEAD_6 = (By.CSS_SELECTOR, "#accordion__heading-6")  # Заголовок списка «Вопросы о важном» 7 сверху
-    HEAD_7 = (By.CSS_SELECTOR, "#accordion__heading-7")  # Заголовок списка «Вопросы о важном» 8 сверху
+    HEAD_0 = (By.XPATH, ".//div[@id='accordion__heading-0']")  # Заголовок списка «Вопросы о важном» 1 сверху
+    HEAD_1 = (By.XPATH, ".//div[@id='accordion__heading-1']")  # Заголовок списка «Вопросы о важном» 2 сверху
+    HEAD_2 = (By.XPATH, ".//div[@id='accordion__heading-2']")  # Заголовок списка «Вопросы о важном» 3 сверху
+    HEAD_3 = (By.XPATH, ".//div[@id='accordion__heading-3']")  # Заголовок списка «Вопросы о важном» 4 сверху
+    HEAD_4 = (By.XPATH, ".//div[@id='accordion__heading-4']")  # Заголовок списка «Вопросы о важном» 5 сверху
+    HEAD_5 = (By.XPATH, ".//div[@id='accordion__heading-5']")  # Заголовок списка «Вопросы о важном» 6 сверху
+    HEAD_6 = (By.XPATH, ".//div[@id='accordion__heading-6']")  # Заголовок списка «Вопросы о важном» 7 сверху
+    HEAD_7 = (By.XPATH, ".//div[@id='accordion__heading-7']")  # Заголовок списка «Вопросы о важном» 8 сверху
     TEXT_0 = (By.XPATH, ".//div[@id='accordion__panel-0']/p")  # Текст при открытии заголовка 1 списка «Вопросы о важном»
     TEXT_1 = (By.XPATH, ".//div[@id='accordion__panel-1']/p")  # Текст при открытии заголовка 2 списка «Вопросы о важном»
     TEXT_2 = (By.XPATH, ".//div[@id='accordion__panel-2']/p")  # Текст при открытии заголовка 3 списка «Вопросы о важном»

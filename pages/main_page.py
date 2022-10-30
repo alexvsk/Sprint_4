@@ -3,7 +3,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from locators.main_page_locators import MainPageLocators as MPL
 import time
 
-class MainPageScooter:
+class MainPage:
 
     def __init__(self, driver):
         self.driver = driver
@@ -21,7 +21,7 @@ class MainPageScooter:
     def scroll_to_order_button_down(self):
         elem1 = self.driver.find_element(*MPL.ORDER_BUTTON_DOWN)
         self.driver.execute_script("arguments[0].scrollIntoView();", elem1)
-        WebDriverWait(self.driver, 3).until(expected_conditions.element_to_be_clickable(MPL.ORDER_BUTTON_DOWN))
+        WebDriverWait(self.driver, 5).until(expected_conditions.element_to_be_clickable(MPL.ORDER_BUTTON_DOWN))
 
     # Клик по кнопке "Заказать" внизу страницы
     def click_order_button_down(self):
@@ -101,7 +101,7 @@ class MainPageScooter:
     def scroll_to_last_head(self):
         elem = self.driver.find_element(*MPL.HEAD_7)
         self.driver.execute_script("arguments[0].scrollIntoView();", elem)
-        WebDriverWait(self.driver, 3).until(expected_conditions.visibility_of_element_located(MPL.HEAD_7))
+        WebDriverWait(self.driver, 5).until(expected_conditions.element_to_be_clickable(MPL.HEAD_7))
 
     # Получение адреса страницы
     def get_url(self):
